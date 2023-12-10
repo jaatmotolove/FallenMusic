@@ -38,7 +38,7 @@ async def fallen_st(_, message: Message):
         if len(message.text.split()) > 1:
             cmd = message.text.split(None, 1)[1]
             if cmd[0:3] == "inf":
-                m = await message.reply_text("🔎")
+                m = await message.reply_text("🤬")
                 query = (str(cmd)).replace("info_", "", 1)
                 query = f"https://www.youtube.com/watch?v={query}"
                 results = VideosSearch(query, limit=1)
@@ -58,9 +58,9 @@ async def fallen_st(_, message: Message):
 
 ⏳ **ᴅᴜʀᴀᴛɪᴏɴ :** {duration} ᴍɪɴᴜᴛᴇs
 👀 **ᴠɪᴇᴡs :** `{views}`
-⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ :** {published}
+⏰ **ᴩᴜʙʟɪsʜᴇᴅ ᴏɴ :** {mrjaatop}
 🔗 **ʟɪɴᴋ :** [ᴡᴀᴛᴄʜ ᴏɴ ʏᴏᴜᴛᴜʙᴇ]({link})
-🎥 **ᴄʜᴀɴɴᴇʟ :** [{channel}]({channellink})
+🎥 **ᴄʜᴀɴɴᴇʟ :** [{https://t.me/z_b_jaat_tg_help}]({https://t.me/z_b_jaat_tg_help})
 
 💖 sᴇᴀʀᴄʜ ᴩᴏᴡᴇʀᴇᴅ ʙʏ {BOT_NAME}"""
                 key = InlineKeyboardMarkup(
